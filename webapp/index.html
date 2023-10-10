@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fireplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>I am feeling</h1>
+        <div class="button-container">
+            <button onclick="fetchEmotionResponse('Stressed')">Stressed</button>
+            <button onclick="fetchEmotionResponse('Anxious')">Anxious</button>
+            <button onclick="fetchEmotionResponse('Sad')">Sad</button>
+            <button onclick="fetchEmotionResponse('Frustrated')">Frustrated</button>
+            <button onclick="fetchEmotionResponse('Fearful')">Fearful</button>
+            <button onclick="fetchEmotionResponse('Nothing')">Nothing</button>
+        </div>
+
+        <div class="description-container" id="descriptionContainer"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
