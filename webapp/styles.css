@@ -24,6 +24,30 @@ button {
     color: black
 }
 
+button.selected {
+    background-color: lightblue;
+    animation: entertainAnimation 2s infinite alternate
+}
+
 .description-container {
     margin-top: 50px;
+    font-size: 1.5em;
+}
+
+.description-container p {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+p.selected {
+    background-color: lightblue;
+    border: 2px solid black;
+    animation: entertainAnimation 2s infinite alternate;
+}
+
+@keyframes entertainAnimation {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(-25deg); } /* tilt to the left */
+    100% { transform: rotate(25deg); } /* tilt to the right */
 }

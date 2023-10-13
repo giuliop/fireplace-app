@@ -8,14 +8,14 @@
 </head>
 <body>
     <div class="container">
-        <h1>I am feeling</h1>
-        <div class="button-container">
-            <button onclick="fetchEmotionResponse('Stressed')">Stressed</button>
-            <button onclick="fetchEmotionResponse('Anxious')">Anxious</button>
-            <button onclick="fetchEmotionResponse('Sad')">Sad</button>
-            <button onclick="fetchEmotionResponse('Frustrated')">Frustrated</button>
-            <button onclick="fetchEmotionResponse('Fearful')">Fearful</button>
-            <button onclick="fetchEmotionResponse('Nothing')">Nothing</button>
+        <h1 id="mainTitle">I am feeling</h1>
+        <div id="buttonContainer" class="button-container">
+            <button onclick="fetchEmotionResponse('Stressed', this)">Stressed</button>
+            <button onclick="fetchEmotionResponse('Anxious', this)">Anxious</button>
+            <button onclick="fetchEmotionResponse('Sad', this)">Sad</button>
+            <button onclick="fetchEmotionResponse('Frustrated', this)">Frustrated</button>
+            <button onclick="fetchEmotionResponse('Fearful', this)">Fearful</button>
+            <button onclick="fetchEmotionResponse('Nothing', this)">Nothing</button>
         </div>
 
         <div class="description-container" id="descriptionContainer"></div>
